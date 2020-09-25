@@ -1,2 +1,2 @@
 # Spring
-##В application.properties указывайте подключение к своей базе данных
+*В application.properties указывайте подключение к своей базе данных*
