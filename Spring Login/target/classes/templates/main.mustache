@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <div>
+        <form action="/logout" method="post">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+    <div>
+        <form method="post">
+            <input type="text" name="name" placeholder="Введіть назву" />
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+            <button type="submit">Додати</button>
+        </form>
+    </div>
+    {{#faculties}}
+    <div>
+        <span>{{name}}</span>
+    </div>
+    {{/faculties}}
+</body>
+</html>
